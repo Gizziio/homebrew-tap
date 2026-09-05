@@ -24,6 +24,9 @@ brew tap allternit/tap
 # Install Allternit Desktop
 brew install --cask allternit
 
+# Install Gizzi Code CLI
+brew install gizzi-code
+
 # Upgrade when a new version is released
 brew upgrade --cask allternit
 ```
@@ -33,12 +36,15 @@ brew upgrade --cask allternit
 | Name | Type | Description |
 |------|------|-------------|
 | `allternit` | Cask | Allternit Desktop — the full Electron app with bundled backend |
+| `gizzi-code` | Formula | Gizzi Code CLI — AI terminal agent (`gizzi`) |
 
 ## Repository Structure
 
 ```
 Casks/
   allternit.rb          # Desktop app cask
+Formula/
+  gizzi-code.rb         # Gizzi Code CLI formula
 README.md               # This file
 ```
 
