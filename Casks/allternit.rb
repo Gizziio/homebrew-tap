@@ -1,9 +1,8 @@
 cask "allternit" do
-  arch arm: "arm64", intel: "x64"
+  arch arm: "arm64"
 
   version "1.0.0"
-  sha256 arm:   "18aca858465c69429a11baa176ac7424f1633151464bf66bfaaf056b24590c15",
-         intel: "PLACEHOLDER_INTEL_SHA256"
+  sha256 arm: "18aca858465c69429a11baa176ac7424f1633151464bf66bfaaf056b24590c15"
 
   url "https://github.com/Gizziio/desktop/releases/download/v#{version}/Allternit-Desktop-#{version}-#{arch}.dmg"
   name "Allternit Desktop"
