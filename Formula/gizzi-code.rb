@@ -1,7 +1,7 @@
 class GizziCode < Formula
   desc "AI-powered terminal interface for the Allternit ecosystem"
   homepage "https://docs.gizziio.com"
-  version "2.1.0"
+  version "2.1.1"
   license "Apache-2.0"
 
   # Release tags look like "gizzi-code/v2.0.5"; assets are version-named:
@@ -11,25 +11,25 @@ class GizziCode < Formula
   # macOS ARM64 (Apple Silicon)
   if OS.mac? && Hardware::CPU.arm?
     url "#{base_url}/gizzi-code-v#{version}-darwin-arm64.tar.gz"
-    sha256 "6c8ca33314cecf5a5eeb29affedb7e5ed3f7607ef7fcb8be17c07cd91bead407"
+    sha256 "1f593d7bcb599e8e69700868a1fa4e881938f182c8a4d58520d77cc072e2ad63"
   end
 
   # macOS Intel
   if OS.mac? && Hardware::CPU.intel?
     url "#{base_url}/gizzi-code-v#{version}-darwin-x64.tar.gz"
-    sha256 "449731398b0f5b4e0c41f50278f6b5349f53b5a2c254deccc8b138e28b296f30"
+    sha256 "30eecd2cfa8e1a1cc5c0606f63786ff6b71de362cc87a793841d14b376099e67"
   end
 
   # Linux ARM64
   if OS.linux? && Hardware::CPU.arm?
     url "#{base_url}/gizzi-code-v#{version}-linux-arm64.tar.gz"
-    sha256 "adc8c8d95986b31e911f313320f4052e4931e6954551401490ed1c845fc208db"
+    sha256 "ba963e6a6c8a23c2d80144711720e207a9c4348b87ffad6b8cbbd48145fc2825"
   end
 
   # Linux x64
   if OS.linux? && Hardware::CPU.intel?
     url "#{base_url}/gizzi-code-v#{version}-linux-x64.tar.gz"
-    sha256 "ee79d94cf297fc51e522fe6e922da239c73db0ec53e8eeec796e40b9714b217f"
+    sha256 "84fce5d1b47f164139d291bea0a4a8d2e3821c6d004b471567c622687e7f8041"
   end
 
   def install
